@@ -10,11 +10,19 @@
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-...." crossorigin="anonymous" />
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <!-- Custom CSS -->
     <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #272727; /* Dark background color */
+            color: #ffffff; /* White text color */
+        }
+
         /* Navbar Styling */
         .navbar {
-            background-color: #343a40; /* Dark background color */
+            background-color: #1a1a1a; /* Darker background color */
         }
 
         .navbar-brand,
@@ -29,10 +37,21 @@
             color: #ffffff;
             padding: 100px 0; /* Adjust the padding as needed */
             text-align: center;
+            position: relative;
+        }
+
+        .hero:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Dark overlay color and transparency */
         }
 
         .hero h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-bottom: 20px;
         }
 
@@ -42,24 +61,25 @@
         }
 
         .hero a.btn-primary {
-            background-color: #007bff; /* Primary button color */
-            border-color: #007bff;
+            background-color: #ff5c5c; /* Custom button color */
+            border-color: #ff5c5c;
+            transition: background-color 0.3s ease-in-out;
         }
 
         .hero a.btn-primary:hover {
-            background-color: #0056b3; /* Darker color on hover */
-            border-color: #0056b3;
+            background-color: #d44c4c; /* Darker color on hover */
+            border-color: #d44c4c;
         }
 
         /* About Us Section Styling */
         #about-us {
-            background-color: #ffffff; /* Light background color */
+            background-color: #333333; /* Darker background color */
             padding: 80px 0; /* Adjust the padding as needed */
         }
 
         /* Features Section Styling */
         #features {
-            background-color: #f8f9fa; /* Light background color */
+            background-color: #444444; /* Darker background color */
             padding: 80px 0; /* Adjust the padding as needed */
         }
 
@@ -79,7 +99,7 @@
 
         /* Pricing Section Styling */
         #pricing {
-            background-color: #343a40; /* Dark background color */
+            background-color: #1a1a1a; /* Darker background color */
             color: #ffffff;
             padding: 80px 0; /* Adjust the padding as needed */
         }
@@ -90,7 +110,7 @@
 
         /* Contact Section Styling */
         #contact {
-            background-color: #f8f9fa; /* Light background color */
+            background-color: #333333; /* Darker background color */
             padding: 80px 0; /* Adjust the padding as needed */
         }
 
@@ -101,7 +121,7 @@
 
         /* Footer Styling */
         footer {
-            background-color: #343a40; /* Dark background color */
+            background-color: #1a1a1a; /* Darker background color */
             color: #ffffff;
             padding: 30px 0; /* Adjust the padding as needed */
             text-align: center;
@@ -114,7 +134,7 @@
         }
 
         .social-icons a:hover {
-            color: #0056b3; /* Darker color on hover */
+            color: #d44c4c; /* Darker color on hover */
         }
     </style>
 </head>
@@ -152,9 +172,9 @@
     <section class="hero" style="background-image: url('pic1.jpg');">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <h1>Your E-Commerce Solution</h1>
-                    <p>Empowering businesses with powerful and flexible e-commerce software.</p>
+                <div class="col-lg-6 mx-auto">
+                    <h1 class="display-3">Your E-Commerce Solution</h1>
+                    <p class="lead">Empowering businesses with powerful and flexible e-commerce software.</p>
                     <a href="#features" class="btn btn-primary btn-lg">Learn More</a>
                 </div>
             </div>
@@ -162,12 +182,12 @@
     </section>
 
     <!-- About Us Section -->
-    <section id="about-us" style="background-color: #ffffff; padding: 80px 0;">
+    <section id="about-us" style="background-color: #333333; padding: 80px 0;">
         <div class="container">
             <h2 class="text-center mb-5">About Us</h2>
             <div class="row">
                 <div class="col-lg-6">
-                    <img src="pic1.jpg" alt="Company Image" class="img-fluid rounded">
+                    <img src="pic2.jpg" alt="Company Image" class="img-fluid rounded">
                 </div>
                 <div class="col-lg-6">
                     <h3>Our Mission</h3>
@@ -210,7 +230,7 @@
     <!-- Pricing Section -->
     <section id="pricing">
         <div class="container">
-            <h2>Pricing</h2>
+            <h2 class="text-center text-white">Pricing</h2>
             <div class="row">
                 <!-- Pricing Plan 1 -->
                 <div class="col-lg-4">
@@ -235,7 +255,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" style="background-color: #f8f9fa; padding: 80px 0;">
+    <section id="contact" style="background-color: #333333; padding: 80px 0;">
         <div class="container">
             <h2 class="text-center mb-5">Contact Us</h2>
             <div class="row justify-content-center">
@@ -262,7 +282,7 @@
     </section>
 
     <!-- Footer Section -->
-    <footer style="background-color: #343a40; color: #ffffff; padding: 30px 0; text-align: center;">
+    <footer style="background-color: #1a1a1a; color: #ffffff; padding: 30px 0; text-align: center;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
