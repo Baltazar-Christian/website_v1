@@ -1,112 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <title>Your Ecommerce Software Company</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Your E-Commerce Software</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-...." crossorigin="anonymous" />
+    <!-- Custom CSS -->
+    <style>
+        /* Navbar Styling */
+        .navbar {
+            background-color: #343a40; /* Dark background color */
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: #ffffff !important; /* White text color */
+        }
+
+        /* Hero Section Styling */
+        .hero {
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            padding: 100px 0; /* Adjust the padding as needed */
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .hero a.btn-primary {
+            background-color: #007bff; /* Primary button color */
+            border-color: #007bff;
+        }
+
+        .hero a.btn-primary:hover {
+            background-color: #0056b3; /* Darker color on hover */
+            border-color: #0056b3;
+        }
+
+        /* Features Section Styling */
+        #features {
+            background-color: #f8f9fa; /* Light background color */
+            padding: 80px 0; /* Adjust the padding as needed */
+        }
+
+        .feature {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .feature h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .feature p {
+            font-size: 1.1rem;
+        }
+
+        /* Pricing Section Styling */
+        #pricing {
+            background-color: #343a40; /* Dark background color */
+            color: #ffffff;
+            padding: 80px 0; /* Adjust the padding as needed */
+        }
+
+        .price {
+            font-size: 1.5rem;
+        }
+
+        /* Contact Section Styling */
+        #contact {
+            background-color: #f8f9fa; /* Light background color */
+            padding: 80px 0; /* Adjust the padding as needed */
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #343a40; /* Dark background color */
+            color: #ffffff;
+            padding: 30px 0; /* Adjust the padding as needed */
+            text-align: center;
+        }
+
+        .social-icons a {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin: 0 10px;
+        }
+
+        .social-icons a:hover {
+            color: #0056b3; /* Darker color on hover */
+        }
+    </style>
 </head>
+
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">krismo</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#features">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero bg-primary text-white text-center">
-    <div class="container">
-      <h1 class="display-4">Powerful Ecommerce Software</h1>
-      <p class="lead">Take your online business to the next level with our cutting-edge ecommerce solutions.</p>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <h2>About Us</h2>
-          <p class="lead">Krismo is dedicated to providing high-quality solutions for online businesses. With a focus on user-friendly interfaces and powerful features, we aim to streamline your ecommerce operations.</p>
-        </div>
-        <div class="col-lg-6">
-          <!-- Add an image or video about your company -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Features Section -->
-  <section id="features" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center">Key Features</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h5 class="card-title">User-Friendly Interface</h5>
-              <p class="card-text">Our software comes with an intuitive and easy-to-use interface, ensuring a seamless experience for both businesses and customers.</p>
+    <!-- Header Section -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Your Company</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-          </div>
         </div>
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h5 class="card-title">Secure Transactions</h5>
-              <p class="card-text">We prioritize the security of your online transactions, implementing robust measures to protect sensitive information.</p>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('path/to/your-hero-image.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Your E-Commerce Solution</h1>
+                    <p>Empowering businesses with powerful and flexible e-commerce software.</p>
+                    <a href="#features" class="btn btn-primary btn-lg">Learn More</a>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h5 class="card-title">Customizable Solutions</h5>
-              <p class="card-text">Tailor our software to meet the unique needs of your business with our customizable solutions and features.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <!-- Feature 1 -->
+                <div class="col-lg-4 feature">
+                    <h3>Feature 1</h3>
+                    <p>Description of the first feature.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="col-lg-4 feature">
+                    <h3>Feature 2</h3>
+                    <p>Description of the second feature.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="col-lg-4 feature">
+                    <h3>Feature 3</h3>
+                    <p>Description of the third feature.</p>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-5">
-    <div class="container">
-      <h2 class="text-center">Contact Us</h2>
-      <p class="text-center">Have questions or want to get started? Reach out to us!</p>
-      <div class="row">
-        <div class="col-lg-6 mx-auto">
-          <!-- Add a contact form or contact information -->
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <div class="container">
+            <h2>Pricing</h2>
+            <div class="row">
+                <!-- Pricing Plan 1 -->
+                <div class="col-lg-4">
+                    <h3>Basic</h3>
+                    <p>Starter features for small businesses.</p>
+                    <p class="price">$19.99/month</p>
+                </div>
+                <!-- Pricing Plan 2 -->
+                <div class="col-lg-4">
+                    <h3>Pro</h3>
+                    <p>Advanced features for growing businesses.</p>
+                    <p class="price">$49.99/month</p>
+                </div>
+                <!-- Pricing Plan 3 -->
+                <div class="col-lg-4">
+                    <h3>Enterprise</h3>
+                    <p>Custom solutions for large enterprises.</p>
+                    <p class="price">Contact us for a quote</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2024 krismo</p>
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to get started? Contact us below.</p>
+            <form>
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
 
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>&copy; 2024 Your Company. All rights reserved.</p>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Social Media Icons -->
+                    <div class="social-icons">
+                        <a href="#" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
